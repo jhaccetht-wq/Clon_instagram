@@ -50,9 +50,8 @@ export default function Publicar() {
             key={ball.id}
             onMouseEnter={() => setActivo(ball.id)}
             onMouseLeave={() => setActivo(null)}
-            className=""
           >
-            <div className={`aspect-square w-full bg-black flex flex-col items-center rounded-2xl relative ${ activo === ball.id} ` }>
+            <div className={`aspect-square w-full bg-black flex flex-col items-center rounded-2xl relative ${ activo === ball.id}` }>
               
             </div>
 

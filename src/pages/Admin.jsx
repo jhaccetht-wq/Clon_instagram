@@ -1,5 +1,10 @@
 export default function Admin(){
 
+    const cual = import.meta.env.VITE_KEY_API;
+    const appName = import.meta.env.VITE_KEY_API;
+    console.log(appName)
+    console.log(cual)
+
 return(
 <>
 
