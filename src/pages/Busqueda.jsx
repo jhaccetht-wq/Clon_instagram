@@ -3,7 +3,7 @@ import { useAuth } from "../context/AuthProvider"
 import Google from "../assets/googlee.png"
 import { use, useEffect, useState } from "react"
 import correoAuth from "../config/correoAuth"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import authGoogle from "../config/authGoogle"
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai"
 
@@ -24,8 +24,7 @@ export default function Busqueda() {
 
         correoAuth(correo, password)
 
-
-
+        navigate('/')
 
     }
 
@@ -77,6 +76,11 @@ const handeGoogle = () => {
                             className="bg-black text-white border rounded-lg h-9 hover:bg-blue-600 transition " >Entrar</button>
 
                     </form>
+
+                    <div>
+                        <span>No tienes cuenta? <Link to={"/regrister" } className="font-medium text-blue-500 underline underline-offset-4 decoration-2
+             hover:text-blue-600">Regristate aca</Link></span>
+                    </div>
                 </div>
             </div>
 

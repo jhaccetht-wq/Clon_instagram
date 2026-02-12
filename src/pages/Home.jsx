@@ -5,24 +5,41 @@ import Encabezado from "../components/Encabezado";
 import { FaHeart, FaRegComment } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
 import Menu from "../components/Menu";
+import { log } from "firebase/firestore/pipelines";
 
 
 
 export default function Home() {
 
-  const [dataMorty, setDataMorty] = useState([]);
+
+
+  const [dataMorty, setDataMorty] = useState([])
 
   useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/character")
-      .then((res) => res.json())
-      .then((data) => {
-        setDataMorty(data.results)
-      })
-      .catch((err) => {
-        console.error("error", err);
-      });
-  }, []);
-  console.log(dataMorty)
+
+
+    const rickandmory = async () => {
+      try {
+        const res = await fetch("https://rickandmortyapi.com/api/character")
+
+        const data = await res.json();
+        setDataMorty(data.results);
+        console.log(data)
+
+      } catch (error) {
+        console.error("error", error.message)
+
+      };
+
+
+    };
+
+rickandmory()
+
+  }, [])
+
+
+
   return (
     <>
       <div className="w-full">
@@ -34,20 +51,20 @@ export default function Home() {
                 <div className="w-10 h-10 bg-white rounded-full">
                   <img src={items.image} alt="" className="rounded-full" />
                 </div>
-               <small>{items.name} </small>
+                <small>{items.name} </small>
               </div>
               <div className="flex flex-col items-center">
-                <img  src={items.image} alt="" className="max-w-[90%]" />
-              </div> 
+                <img src={items.image} alt="" className="max-w-[90%]" />
+              </div>
               <div className="flex justify-start w-full gap-4 pt-5    ">
-                <FaHeart color="red"  />
+                <FaHeart color="red" />
                 <FaRegComment />
-                <FiSend  />
+                <FiSend />
               </div>
             </div>
           ))}
         </div>
-        
+
       </div>
     </>
   );

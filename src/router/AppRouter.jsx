@@ -5,7 +5,7 @@ import Publicar from "../pages/Publicar";
 import Like from "../pages/Like";
 import Perfil from "../pages/Perfil";
 import Menu from "../components/Menu";
-import Provider from "../components/Provider";
+import Regrister from "../pages/Regrister";
 
 export default function AppRouter() {
 
@@ -18,11 +18,9 @@ export default function AppRouter() {
                     <Route path="/" element={<Home />} />
                     <Route path="/busqueda" element={<Busqueda />} />
                     <Route path="/publicar" element={<Publicar />} />
-                    <Route path="/like" element={
-                        <Provider> <Like />
-                        </Provider>
-                    } />
+                    <Route path="/like" element={<Like />} />
                     <Route path="/perfil" element={<Perfil />} />
+                    <Route path="/regrister" element={<Regrister/>}></Route>
                 </Routes>
 
             </BrowserRouter>

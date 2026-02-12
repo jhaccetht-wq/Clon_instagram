@@ -1,27 +1,27 @@
 /* ===== APP GENERAL ===== */
-.App {
+/* .App {
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
+} */
 
 /* ===== CONTENEDORES ===== */
 
 
 /* ===== TEXTO ===== */
-.title {
+/* .title {
   font-size: 2rem;
   font-weight: 700;
-}
+} */
 
-.subtitle {
+/* .subtitle {
   font-size: 1.2rem;
   color: #555;
-}
+} */
 
 /* ===== BOTONES ===== */
-.btn {
+/* .btn {
   padding: 0.7rem 1.2rem;
   border-radius: 8px;
   background-color: #111;
@@ -33,10 +33,10 @@
 .btn:hover {
   background-color: #333;
   transform: translateY(-2px);
-}
+} */
 
 /* ===== FLEX HELPERS ===== */
-.flex {
+/* .flex {
   display: flex;
 }
 
@@ -50,7 +50,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {

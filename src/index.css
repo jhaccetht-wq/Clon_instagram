@@ -2,7 +2,7 @@
 
 
 /* ===== CONFIGURACIÓN GLOBAL ===== */
-html, body {
+/* html, body {
   width: 100%;
   height: 100%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -10,32 +10,32 @@ html, body {
     sans-serif;
   background-color: #ffffff;
   color: #000000;
-}
+} */
 
 /* ===== ROOT DE REACT ===== */
-#root {
+/* #root {
   width: 100%;
   min-height: 100vh;
-}
+} */
 
 /* ===== ELEMENTOS BÁSICOS ===== */
-a {
+/* a {
   text-decoration: none;
   color: inherit;
-}
+} */
 
-ul {
+/* ul {
   list-style: none;
-}
+} */
 
-button {
+/* button { */
   /* border: none; */
   /* background: none; */
-  cursor: pointer;
-  font-family: inherit;
-}
+  /* cursor: pointer; */
+  /* font-family: inherit; */
+/* } */
 
-img {
+/* img {
   max-width: 100%;
   display: block;
-}
+} */
